@@ -1,0 +1,7 @@
+2026-06-20 00:35:59 [restartedMain] INFO  org.example.Journalapplication - Starting Journalapplication using Java 17.0.19 on LAPTOP-UQKT79TF with PID 28984 (C:\Users\lenovo\IdeaProjects\shazicodes\target\classes started by lenovo in C:\Users\lenovo\IdeaProjects\shazicodes)
+2026-06-20 00:35:59 [restartedMain] DEBUG org.example.Journalapplication - Running with Spring Boot v2.7.16, Spring v5.3.30
+2026-06-20 00:35:59 [restartedMain] INFO  org.example.Journalapplication - The following 1 profile is active: "dev"
+2026-06-20 00:35:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-20 00:35:59 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-20 00:35:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-06-20 00:35:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 2 MongoDB repository interfaces.
