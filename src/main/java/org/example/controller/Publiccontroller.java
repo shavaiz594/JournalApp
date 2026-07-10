@@ -49,4 +49,8 @@ public class Publiccontroller {
             return new ResponseEntity<>("error",HttpStatus.UNAUTHORIZED);
         }
     }
+    @GetMapping("/")
+    public ResponseEntity<?>healthcheck() {
+        return new ResponseEntity<>("Backend Service is running",HttpStatus.OK);
+    }
 }
