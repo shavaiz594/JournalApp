@@ -6,12 +6,11 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
-
+@Disabled
 @SpringBootTest(classes = Journalapplication.class)
 public class Redistest {
     @Autowired
     private RedisTemplate redisTemplate;
-    @Disabled
     @Test
     public void testConnection(){
         redisTemplate.opsForValue().set("email","gmail@email.com");

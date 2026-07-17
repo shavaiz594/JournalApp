@@ -8,13 +8,8 @@ target/
 *.iml
 *.ipr
 
-### Secrets / Local Config ###
-src/main/resources/application.properties
-
 ### OS ###
 .DS_Store
 ### logs ##
 *.log
 logs/
-src/main/resources/application-dev.properties
-src/main/resources/application-prod.properties
