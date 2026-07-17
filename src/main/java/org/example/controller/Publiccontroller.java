@@ -1,5 +1,7 @@
 package org.example.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
 import org.example.Service.Userservice;
 import org.example.Service.UserserviceAuth;
@@ -18,6 +20,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/public")
 @Slf4j
+@Tag(name="PUBLIC APIs")
 public class Publiccontroller {
     @Autowired
     Userservice userservice;
@@ -27,15 +30,13 @@ public class Publiccontroller {
     private UserserviceAuth userserviceAuth;
     @Autowired
     private JWTUtil jwtutil;
-    @GetMapping
-    public List<UserEntry> getUsers() {
-        return userservice.Getall();
-    }
     @PostMapping("/signup")
+    @Operation(summary = "Saves the Info of the new user")
     public void Signup(@RequestBody UserEntry userentry) {
         userservice.Saveentry(userentry);
     }
     @PostMapping("/login")
+    @Operation(summary = "Verifies the user and generates a JWT token")
     public ResponseEntity<String> Login(@RequestBody UserEntry userentry) {
         try{
             authenticationManager.authenticate(

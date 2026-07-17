@@ -17,7 +17,12 @@ public class UserserviceAuth implements UserDetailsService {
     private Userrepo userrepo;
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserEntry user=userrepo.findByUsername(username);
+        UserEntry user=null;
+        if (username.contains("@")) {
+            user = userrepo.findByEmail(username);
+        } else {
+            user = userrepo.findByUsername(username);
+        }
         if(user!=null){
             UserDetails userdetails=org.springframework.security.core.userdetails.User.builder()
                     .username(user.getUsername())
