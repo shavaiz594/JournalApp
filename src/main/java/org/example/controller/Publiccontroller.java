@@ -52,6 +52,6 @@ public class Publiccontroller {
     }
     @GetMapping("/")
     public ResponseEntity<?>healthcheck() {
-        return new ResponseEntity<>("Backend Service is running",HttpStatus.OK);
+        return new ResponseEntity<>("Service is running in Backend",HttpStatus.OK);
     }
 }
