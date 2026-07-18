@@ -112,6 +112,9 @@
                 <version>3.11.0.3922</version>
             </plugin>
         </plugins>
+        <finalName>
+            echoinkcontainer
+        </finalName>
     </build>
 
 </project>
