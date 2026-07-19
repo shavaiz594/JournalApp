@@ -54,4 +54,8 @@ public class Publiccontroller {
     public ResponseEntity<?>healthcheck() {
         return new ResponseEntity<>("Backend Service is currently running",HttpStatus.OK);
     }
+    @GetMapping("/githubactions")
+    public ResponseEntity<?>githubactionsCICD() {
+        return new ResponseEntity<>("github actions is running",HttpStatus.OK);
+    }
 }
