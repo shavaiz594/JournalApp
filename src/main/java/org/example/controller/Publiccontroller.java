@@ -56,6 +56,6 @@ public class Publiccontroller {
     }
     @GetMapping("/githubactions")
     public ResponseEntity<?>githubactionsCICD() {
-        return new ResponseEntity<>("github actions is running",HttpStatus.OK);
+        return new ResponseEntity<>("CICD is running",HttpStatus.OK);
     }
 }
